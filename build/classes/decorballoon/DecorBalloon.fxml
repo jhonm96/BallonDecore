@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="decorballoon.DecorBalloonController">
+   <children>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="760.0" style="-fx-background-color: #784e81;" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab style="-fx-background-color: #ffcb2d;" text="Agregar Pedido">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="586.0" prefWidth="761.0" style="-fx-background-color: #795581;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="19.0" prefHeight="49.0" prefWidth="450.0" text="DECOR BALLOON EXPRESS" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype" size="21.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="24.0" layoutY="58.0" />
+                        <Label layoutX="7.0" layoutY="100.0" prefHeight="32.0" prefWidth="266.0" text="Registrar nuevo pedido" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Italic" size="25.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="buttonRegistrar" layoutX="464.0" layoutY="494.0" mnemonicParsing="false" onAction="#Registro" prefHeight="31.0" prefWidth="167.0" style="-fx-background-color: #784e81;" text="Registrar" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="17.0" />
+                           </font>
+                           <effect>
+                              <Blend mode="HARD_LIGHT" />
+                           </effect>
+                        </Button>
+                        <GridPane layoutX="14.0" layoutY="170.0" prefHeight="296.0" prefWidth="786.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="351.20001220703125" minWidth="10.0" prefWidth="270.4000244140625" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.99995117187495" minWidth="10.0" prefWidth="288.79997558593755" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label prefHeight="23.0" prefWidth="175.0" text="Documento ID" textFill="#ffcb2d" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="23.0" prefWidth="168.0" text="Telefono" textFill="#ffcb2d" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="23.0" prefWidth="170.0" text="Tipo de Producto" textFill="#ffcb2d" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="23.0" prefWidth="166.0" text="Direccion de Envio" textFill="#ffcb2d" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="23.0" prefWidth="165.0" text="Valor del Producto" textFill="#ffcb2d" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txf_ID" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="txf_telefono" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="txf_tipo" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="txf_direccion" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="txf_valor" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label prefHeight="23.0" prefWidth="175.0" text="Nombre" textFill="#ffcb2d">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txf_nombre" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="1" />
+                           </children>
+                        </GridPane>
+                        <ImageView fitHeight="76.0" fitWidth="80.0" layoutY="534.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/5.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="84.0" fitWidth="80.0" layoutX="485.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/3.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lb_registrado" alignment="CENTER" layoutX="4.0" layoutY="466.0" prefHeight="22.0" prefWidth="778.0" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #ffcb2d;" text="Proyectos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="612.0" prefWidth="782.0" style="-fx-background-color: #795581;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="27.0" prefHeight="22.0" prefWidth="246.0" text="Proyectos pendientes" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="Pendientes" blendMode="SOFT_LIGHT" cache="true" editable="false" layoutX="24.0" layoutY="70.0" prefHeight="196.0" prefWidth="716.0" promptText="Proyectos Pendientes :)" style="-fx-background-color: #ffcb2d;">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="16.0" />
+                           </font>
+                        </TextArea>
+                        <Button fx:id="buttonConsultar" layoutX="601.0" layoutY="277.0" mnemonicParsing="false" onAction="#pendientes" prefHeight="19.0" prefWidth="138.0" style="-fx-background-color: #784e81;" text="Buscar" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="17.0" />
+                           </font>
+                           <effect>
+                              <Blend mode="HARD_LIGHT" />
+                           </effect>
+                        </Button>
+                        <TextArea fx:id="txf_entregados" blendMode="SOFT_LIGHT" cache="true" editable="false" layoutX="24.0" layoutY="321.0" prefHeight="213.0" prefWidth="720.0" promptText="Proyectos Entregados :)" style="-fx-background-color: #ffcb2d;">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="16.0" />
+                           </font>
+                        </TextArea>
+                        <Button fx:id="buttonConsultar1" layoutX="605.0" layoutY="551.0" mnemonicParsing="false" onAction="#entregados" prefHeight="19.0" prefWidth="138.0" style="-fx-background-color: #784e81;" text="Buscar" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="17.0" />
+                           </font>
+                           <effect>
+                              <Blend mode="HARD_LIGHT" />
+                           </effect>
+                        </Button>
+                        <Label fx:id="lb_notificacionpendientes" alignment="CENTER" layoutX="48.0" layoutY="282.0" prefHeight="22.0" prefWidth="517.0" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="278.0" prefHeight="22.0" prefWidth="246.0" text="Proyectos entregados" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #ffcb2d;" text="Entregas">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #795581;">
+                     <children>
+                        <Button fx:id="buttonEntrega" layoutX="434.0" layoutY="521.0" mnemonicParsing="false" onAction="#Entregar" prefHeight="34.0" prefWidth="191.0" style="-fx-background-color: #784e81;" text="Entregar producto" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="17.0" />
+                           </font>
+                           <effect>
+                              <Blend mode="HARD_LIGHT" />
+                           </effect>
+                        </Button>
+                        <Button fx:id="buttonBuscarEntrega" layoutX="552.0" layoutY="83.0" mnemonicParsing="false" onAction="#ConsultarEntrega" style="-fx-background-color: #784e81;" text="Buscar" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="17.0" />
+                           </font>
+                           <effect>
+                              <Blend mode="HARD_LIGHT" />
+                           </effect>
+                        </Button>
+                        <Label layoutX="14.0" layoutY="8.0" prefHeight="42.0" prefWidth="219.0" text="Entregas" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype" size="25.0" />
+                           </font>
+                        </Label>
+                        <GridPane layoutX="14.0" layoutY="155.0" prefHeight="339.0" prefWidth="691.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="351.20001220703125" minWidth="10.0" prefWidth="270.4000244140625" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.99995117187495" minWidth="10.0" prefWidth="288.79997558593755" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label prefHeight="23.0" prefWidth="175.0" text="Documento ID" textFill="#ffcb2d" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="23.0" prefWidth="168.0" text="Telefono" textFill="#ffcb2d" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="23.0" prefWidth="170.0" text="Tipo de Producto" textFill="#ffcb2d" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="23.0" prefWidth="166.0" text="Direccion de Envio" textFill="#ffcb2d" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="23.0" prefWidth="165.0" text="Valor del Producto" textFill="#ffcb2d" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txf_ID1" editable="false" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="txf_telefono1" editable="false" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="txf_tipo1" editable="false" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="txf_envio1" editable="false" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="txf_valor1" editable="false" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label prefHeight="23.0" prefWidth="288.0" text="Estado de Entrega del Producto" textFill="#ffcb2d" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txf_estado1" editable="false" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <Label prefHeight="23.0" prefWidth="175.0" text="Nombre" textFill="#ffcb2d">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txf_nombre1" editable="false" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="1" />
+                           </children>
+                        </GridPane>
+                        <Label layoutX="169.0" layoutY="132.0" prefHeight="22.0" prefWidth="296.0" text="Informacion del producto a entregar" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="84.0" fitWidth="80.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/3.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="txf_ConsultaID" layoutX="257.0" layoutY="86.0" prefHeight="26.0" prefWidth="267.0" style="-fx-background-color: #ffcb2d;" />
+                        <Label layoutX="53.0" layoutY="86.0" prefHeight="26.0" prefWidth="200.0" style="-fx-background-color: #ffcb2d;" text="Consulta Numero de ID :" textFill="#795581">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #ffcb2d;" text="Administracion de Datos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #795581;">
+                     <children>
+                        <GridPane layoutX="20.0" layoutY="149.0" prefHeight="282.0" prefWidth="665.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="351.20001220703125" minWidth="10.0" prefWidth="300.7999755859375" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="351.20001220703125" minWidth="10.0" prefWidth="65.60002441406249" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.99995117187495" minWidth="10.0" prefWidth="288.79997558593755" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label prefHeight="23.0" prefWidth="175.0" text="Documento ID" textFill="#ffcb2d" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="23.0" prefWidth="168.0" text="Telefono" textFill="#ffcb2d" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="23.0" prefWidth="170.0" text="Tipo de Producto" textFill="#ffcb2d" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="23.0" prefWidth="166.0" text="Direccion de Envio" textFill="#ffcb2d" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="23.0" prefWidth="165.0" text="Valor del Producto" textFill="#ffcb2d" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txf_ID2" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <TextField fx:id="txf_telefono2" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <TextField fx:id="txf_tipo2" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <TextField fx:id="txf_direccion2" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <TextField fx:id="txf_valor2" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                              <Label prefHeight="23.0" prefWidth="288.0" text="Estado de Entrega del Producto" textFill="#ffcb2d" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txf_estado2" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                              <Label prefHeight="23.0" prefWidth="175.0" text="Nombre" textFill="#ffcb2d">
+                                 <font>
+                                    <Font name="Palatino Linotype" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txf_nombre2" style="-fx-background-color: #ffcb2d;" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <Label layoutX="41.0" layoutY="83.0" prefHeight="27.0" prefWidth="198.0" style="-fx-background-color: #ffcb2d;" text="Consulta Numero de ID :" textFill="#795581">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txf_consulta" layoutX="244.0" layoutY="83.0" prefHeight="28.0" prefWidth="268.0" style="-fx-background-color: #ffcb2d;" />
+                        <Label alignment="CENTER" layoutX="157.0" layoutY="122.0" prefHeight="26.0" prefWidth="281.0" text="Resultados" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="194.0" text="Consultas" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype" size="25.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="buttonBuscar" layoutX="533.0" layoutY="80.0" mnemonicParsing="false" onAction="#Buscar" style="-fx-background-color: #784e81;" text="Buscar" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="17.0" />
+                           </font>
+                           <effect>
+                              <Blend mode="HARD_LIGHT" />
+                           </effect>
+                        </Button>
+                        <Button fx:id="buttonEliminar" layoutX="414.0" layoutY="472.0" mnemonicParsing="false" onAction="#Eliminar" prefHeight="34.0" prefWidth="130.0" style="-fx-background-color: #784e81;" text="Eliminar" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="17.0" />
+                           </font>
+                           <effect>
+                              <Blend mode="HARD_LIGHT" />
+                           </effect>
+                        </Button>
+                        <Button fx:id="buttonModificar" layoutX="140.0" layoutY="472.0" mnemonicParsing="false" onAction="#Modificar" prefHeight="34.0" prefWidth="132.0" style="-fx-background-color: #784e81;" text="Modificar" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="17.0" />
+                           </font>
+                           <effect>
+                              <Blend mode="HARD_LIGHT" />
+                           </effect>
+                        </Button>
+                        <ImageView fitHeight="84.0" fitWidth="80.0" layoutX="-20.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/4.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lb_notificacion" alignment="CENTER" layoutX="1.0" layoutY="439.0" prefHeight="18.0" prefWidth="768.0" textFill="#ffcb2d">
+                           <font>
+                              <Font name="Palatino Linotype Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
